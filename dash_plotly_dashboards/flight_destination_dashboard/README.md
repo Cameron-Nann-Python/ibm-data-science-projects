@@ -1,5 +1,7 @@
 # Flight Destination Dashboard
 
+![Flight Destination Dashboard](https://github.com/Cameron-Nann-Python/ibm-data-science-projects/blob/main/dash_plotly_dashboards/flight_destination_dashboard/screenshots/flight_destination.py)
+
 ## Overview
 The objective of this dashboard is to show total flights by destination state for a given year. An input year dropdown component serves as an input to a callback function that modifies the display of a bar chart of flight destinations to various US states. The graph serves as an output that is modified with the callback function.
 
