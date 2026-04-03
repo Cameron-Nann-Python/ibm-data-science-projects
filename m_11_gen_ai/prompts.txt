@@ -1,0 +1,64 @@
+
+Load Data
+
+Write a Python code that can perform the following tasks.
+1. Read the CSV file, located on a given file path, into a pandas data frame, assuming that the first row of the file can be used as the headers for the data.
+2. Print the first 5 rows of the dataframe to verify correct loading.
+
+Data Cleaning
+
+Write a Python code that performs the following tasks:
+1. Identify the columns of a data frame with missing values.
+2. Replace the missing values thus identified with mean value of the column.
+3. Deletes the duplicate entries from the data frame.
+
+Data Augmentation
+
+Write a Python code that performs the following tasks:
+1. Encode categorical variables
+2. Train a VAE
+3. Compare distributions
+4. Check correlations
+5. Train a downstream model on real+synthetic vs real-only and compare performance
+
+
+Write a Python code that identifies the top 5 attributes with highest correlation with the target attribute in a data frame.
+Write a Python code that counts the number of entries in a dataframe with each unique value of a specific attribute.
+Write a Python code that creates a Seaborn box plot between a source and target attributes of a dataframe.
+Write a Python code that creates a regression plot between a source attribute and a target attribute.
+
+Model Development and Evaluation
+
+Write a Python code to fit a linear regression model on a target variable on basis of a source variable. Calculate the R^2 values and MSE values for this model.
+Write a Python code to fit a linear regression model on a target variable on basis of a set of source variables. Calculate the R^2 values and MSE values for this model.
+
+Write a Python code that can perform the following tasks.
+1. Create a pipeline with standard scalar, second degree polynomial features and linear regression model.
+2. Fit this pipeline for a target variable using a set of source attributes from a dataframe.
+3. Evaluate the R^2 and MSE values for the trained model.
+
+Write a Python code that can perform the following tasks.
+
+1. Assuming that a subset of the attributes of a data frame are source attributes and one of the attributes is a target attribute, split the data into training and testing data assuming the testing data to be 20%.
+2. Create and fit a Ridge regression model using the training data, setting the regularization parameter to 0.1.
+3. Calculate the MSE and R^2 values for the Ridge Regression model using the testing data.
+
+Write a Python code that can perform the following tasks.
+
+1. Assuming that a subset of the attributes of a data frame are source attributes and one of the attributes is a target attribute, split the data into training and testing data assuming the testing data to be 20%.
+2. Create and fit a Ridge regression model using the training data, setting the regularization parameter to 0.1.
+3. Calculate the MSE and R^2 values for the Ridge Regression model using the testing data.
+
+Write a Python code that can perform the following tasks.
+
+1. Assuming that a subset of the attributes of a data frame are source attributes and one of the attributes is a target attribute, split the data into training and testing data assuming the testing data to be 20%.
+2. Apply second degree polynomial scaling to the training and testing data.
+3. Create and fit a Grid search on Ridge regression with cross validation using the training data, for a set of values of the parameter alpha.
+4. Calculate the MSE and R^2 values for the Ridge Regression model using the testing data.
+
+Write a Python code that can perform the following tasks.
+
+1. Assuming that a subset of the attributes of a data frame are source attributes and one of the attributes is a target attribute, split the data into training and testing data assuming the testing data to be 20%.
+2. Apply second degree polynomial scaling to the training and testing data.
+3. Create and fit a Grid search on Ridge regression with cross validation using the training data, for a set of values of the parameter alpha.
+4. Calculate the MSE and R^2 values for the Ridge Regression model using the testing data.
