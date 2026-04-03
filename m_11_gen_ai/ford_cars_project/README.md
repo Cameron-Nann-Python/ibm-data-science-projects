@@ -7,8 +7,8 @@ In this IBM project, I took on the role of a data scientist at a consultancy fir
 ## Tasks
 
 The following tasks were performed to achieve the business objective:
-- data cleaning: remove duplicate entries and imputing missing values
-- exploratory data analysis (EDA): examine relationship between features and price
+- data cleaning: removed duplicate entries and imputing missing values
+- exploratory data analysis (EDA): examined relationship between features and price
   - identify number of sales per fuel type
   - identify transmission type with highest number of price outliers
 - selecting model architecture: compare linear, polynomial, and ridge regression for univariate and multivariate analysis
@@ -32,14 +32,36 @@ The following tasks were performed to achieve the business objective:
 
 ### Data Insights and Visualization
 
+The top five features correlated to price were:
+-  year
+-  mileage
+-  engineSize
+-  tax
+-  mpg
+
 An exploration of the data revealed key relationships between the Ford cars:
 - Over 67.8% of cars used petrol as their fuel type
 - Manual transmissions had the greatest number of price outliers
+
+![Price vs Transmission](https://github.com/Cameron-Nann-Python/ibm-data-science-projects/blob/main/m_11_gen_ai/ford_cars_project/images/price_vs_transmission.png)
+
 - The price of a car steadily declines as mpg rises
+
+![Price vs MPG](https://github.com/Cameron-Nann-Python/ibm-data-science-projects/blob/main/m_11_gen_ai/ford_cars_project/images/price_vs_mpg.png)
 
 ### Model Development and Evaluation
 
-A collection of linear regression and ridge regression models were used to predict the price of a Ford car. The best performing model achieved an r<sup>2</sup> score of 0.7807 and an mean squared error of 5004788 using a Ridge regression model with a second degree polynomial transform.  
+A collection of linear regression and ridge regression models were used to predict the price of a Ford car. The best performing model achieved an R<sup>2</sup> score of 0.7667 and a mean squared error of 5234038 using a linear regression pipeline model with a second degree polynomial transform. The features selected the top five most correlated to the target. This model was the most successful due to:
+- Polynomial features that captured nonlinear relationships between the features
+
+| Model | Features Used | R<sup>2</sup> | MSE |
+|-------|---------------|---------------|-----|
+| Linear Regression | mpg | 0.1199 | 19741681 |
+| Linear Regression | top 5 | 0.7265 | 6134065 |
+| Linear Regression Pipeline | top 5 (second order polynomial transform) | 0.7667 | 5234038 |
+| Ridge Regression | top 5 | 0.6917 | 6912726 |
+| Ridge Regression | top 5 (third order polynomial transform) | 0.6914 | 6919636 |
+| Ridge Regression + GridSearch | top 5 (second order polynomial transform) | 0.6914 | 6919636 |
 
 ## Technologies Used
 - Python3.13
