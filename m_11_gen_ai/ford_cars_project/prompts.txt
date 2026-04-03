@@ -52,7 +52,7 @@ Write a Python code that can perform the following tasks.
 Write a Python code that can perform the following tasks.
 
 1. Assuming that a subset of the attributes of a data frame are source attributes and one of the attributes is a target attribute, split the data into training and testing data assuming the testing data to be 20%.
-2. Apply third degree polynomial scaling to the training and testing data.
+2. Apply second degree polynomial scaling to the training and testing data.
 3. Create and fit a Grid search on Ridge regression with cross validation using the training data, for a set of values of the parameter alpha.
 4. Calculate the MSE and R^2 values for the Ridge Regression model using the testing data.
 
